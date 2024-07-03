@@ -1,0 +1,8 @@
+project_identifier: PROJECT_IDENTIFIER_CROWDIN
+api_key: API_KEY_CROWDIN
+base_path: ./
+preserve_hierarchy: true
+files:
+  - source: /content/en/index.html
+    translation: /content/%two_letters_code%/%original_file_name%
+    update_option: "update_as_unapproved"
