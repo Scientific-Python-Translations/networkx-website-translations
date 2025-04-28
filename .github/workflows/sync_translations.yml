@@ -16,7 +16,7 @@ jobs:
           source-folder: "website/build/"
           source-ref: "main"
           translations-repo: "Scientific-Python-Translations/networkx-website-translations"
-          translations-folder: "networkx-website-translations/build/"
+          translations-folder: "networkx-website-translations/build/en/"
           translations-ref: "main"
           translation-percentage: "90"
           approval-percentage: "0"
