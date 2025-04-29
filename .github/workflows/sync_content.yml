@@ -11,10 +11,10 @@ jobs:
         uses: Scientific-Python-Translations/content-sync@main
         with:
           source-repo: "networkx/website"
-          source-folder: "website/build/"
+          source-folder: "build/"
           source-ref: "main"
           translations-repo: "Scientific-Python-Translations/networkx-website-translations"
-          translations-folder: "networkx-website-translations/build/"
+          translations-folder: "build/"
           translations-ref: "main"
           # These are provided by the Scientific Python Project and allow
           # automation with bots
