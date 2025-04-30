@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <title>NetworkX &#8212; NetworkX  documentation</title>
-  <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-  <link rel="icon" href="_static/favicon.ico" />
-  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-  <script src="_static/jquery.js"></script>
+  <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+  <link rel="icon" href="../_static/favicon.ico" />
+  <script id="documentation_options" data-url_root="./" src="../_static/documentation_options.js"></script>
+  <script src="../_static/jquery.js"></script>
+  <script src="../_static/languages.js"></script>
+  <script src="../_static/copyright.js"></script>
   <script defer data-domain="networkx.org" src="https://views.scientific-python.org/js/script.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 </head>
@@ -18,7 +20,7 @@
       <div class="documentwrapper">
         <div class="bodywrapper">
           <div class="body" role="main">            
-            <h1><img class="logo" src="_static/networkx_logo.svg" alt="Logo"/></h1>
+            <h1><img class="logo" src="../_static/networkx_logo.svg" alt="Logo"/></h1>
   
             <blockquote>
             <p>NetworkX is a Python package for the creation, manipulation, and
@@ -72,7 +74,7 @@
             <h4><a id="other">Archive</a></h4>
             
               <ul id="versionList" style="display: none;">
-                  <script src="_static/docversions.js"></script>
+                  <script src="../_static/docversions.js"></script>
                   <script type="text/javascript">
                       insert_version_links();
                   </script>
@@ -84,7 +86,12 @@
               });
               </script>
             </div></br>
-              
+          
+            <div class="tile">
+              <h4>Language</h4>
+              <select id="language-switcher" onchange="change_language()">
+              </select>
+            </div></br>
           </div>
         </div>
       </div>
@@ -92,7 +99,7 @@
     </div>
 
   <div class="footer">
-    &copy;2014-2024, NetworkX developers.
-  </div>     
+    &copy;2014-<span id="copyright-year"></span>, NetworkX developers.
+  </div>
 </body>
 </html>
