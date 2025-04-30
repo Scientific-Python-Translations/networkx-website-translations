@@ -13,7 +13,7 @@ jobs:
           # Provided by user
           crowdin-project: "NetworkX"
           source-repo: "networkx/website"
-          source-path: "website/build/en/"
+          source-path: "build/en/"
           source-ref: "main"
           translations-repo: "Scientific-Python-Translations/networkx-website-translations"
           translations-path: "build/"
