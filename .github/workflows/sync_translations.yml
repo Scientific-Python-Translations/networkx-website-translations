@@ -21,10 +21,10 @@ jobs:
           translations-ref: "main"
           translation-percentage: "90"
           approval-percentage: "0"
-          use-precommit: "true"
+          use-precommit: "flase"
           create-toml-file: "false"
-          create-upstream-pr: "false"
-          auto-merge: "false"
+          create-upstream-pr: "true"
+          auto-merge: "true"
           # Provided by organization secrets
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
