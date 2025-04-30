@@ -13,14 +13,18 @@ jobs:
           # Provided by user
           crowdin-project: "NetworkX"
           source-repo: "networkx/website"
-          source-folder: "website/build/"
+          source-path: "website/build/en/"
           source-ref: "main"
           translations-repo: "Scientific-Python-Translations/networkx-website-translations"
-          translations-source-folder: "networkx-website-translations/build/"
+          translations-path: "networkx-website-translations/build/"
+          translations-source-path: "networkx-website-translations/build/en/"
           translations-ref: "main"
           translation-percentage: "90"
           approval-percentage: "0"
           use-precommit: "true"
+          create-toml-file: "false"
+          create-upstream-pr: "false"
+          auto-merge: "false"
           # Provided by organization secrets
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
