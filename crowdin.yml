@@ -2,6 +2,7 @@ project_identifier: PROJECT_IDENTIFIER_CROWDIN
 api_key: API_KEY_CROWDIN
 pull_request_title: New Crowdin updates
 pull_request_labels:
+  - do-not-merge
 base_path: ./
 preserve_hierarchy: true
 files:
