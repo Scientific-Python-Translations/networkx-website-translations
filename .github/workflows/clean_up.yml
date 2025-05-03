@@ -1,0 +1,20 @@
+name: Clean up
+on:
+  #schedule:
+  #  - 0 0 * * FRI  # Every Friday at midnight
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync NetworkX translations
+        uses: Scientific-Python-Translations/clean-up@main
+        with:
+          translations-repo: "Scientific-Python-Translations/networkx-website-translations"
+          translations-ref: "main"
+          # These are provided by the Scientific Python Project and allow
+          # automation with bots
+          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+          token: ${{ secrets.TOKEN }}
+          crowdin-token: ${{ secrets.CROWDIN_TOKEN }}
