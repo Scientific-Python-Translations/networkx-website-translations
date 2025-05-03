@@ -1,11 +1,13 @@
+# https://support.crowdin.com/developer/configuration-file/
 project_identifier: PROJECT_IDENTIFIER_CROWDIN
 api_key: API_KEY_CROWDIN
-pull_request_title: New Crowdin updates
+pull_request_title: New Crowdin updates  # Do not change this line
 pull_request_labels:
-  - do-not-merge
+  - do-not-merge  # Do not change this line
 base_path: ./
 preserve_hierarchy: true
 files:
+  # Update this to the correct extensions of your project
   - source: /build/en/*.html
     translation: /build/%two_letters_code%/%original_file_name%
     update_option: "update_as_unapproved"
