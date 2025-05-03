@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Sync NetworkX translations
+      - name: Clean up NetworkX translations
         uses: Scientific-Python-Translations/clean-up@main
         with:
           translations-repo: "Scientific-Python-Translations/networkx-website-translations"
@@ -17,4 +17,3 @@ jobs:
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           token: ${{ secrets.TOKEN }}
-          crowdin-token: ${{ secrets.CROWDIN_TOKEN }}
