@@ -1,7 +1,7 @@
 name: Sync Translations
 on:
   #schedule:
-  #  - cron: '0 12 * * MON'  # Every Monday at noon
+  #  - cron: '0 0 * * WED'  # Every Wednesday at midnight
   workflow_dispatch:
 jobs:
   build:
@@ -10,7 +10,6 @@ jobs:
       - name: Sync NetworkX translations
         uses: Scientific-Python-Translations/translations-sync@main
         with:
-          # Provided by user
           crowdin-project: "NetworkX"
           source-repo: "networkx/website"
           source-path: "build/en/"
