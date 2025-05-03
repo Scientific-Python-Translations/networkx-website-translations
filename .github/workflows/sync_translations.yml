@@ -25,7 +25,8 @@ jobs:
           create-toml-file: "false"
           create-upstream-pr: "true"
           auto-merge: "true"
-          # Provided by organization secrets
+          # These are provided by the Scientific Python Project and allow
+          # automation with bots
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           token: ${{ secrets.TOKEN }}

@@ -1,9 +1,9 @@
 # https://support.crowdin.com/developer/configuration-file/
 project_identifier: PROJECT_IDENTIFIER_CROWDIN
-api_key: API_KEY_CROWDIN
 pull_request_title: New Crowdin updates  # Do not change this line
 pull_request_labels:
   - do-not-merge  # Do not change this line
+api_key: API_KEY_CROWDIN
 base_path: ./
 preserve_hierarchy: true
 files:
