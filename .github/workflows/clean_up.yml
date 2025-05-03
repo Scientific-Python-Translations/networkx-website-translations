@@ -4,7 +4,7 @@ on:
   #  - 0 0 * * FRI  # Every Friday at midnight
   workflow_dispatch:
 jobs:
-  build:
+  clean:
     runs-on: ubuntu-latest
     steps:
       - name: Clean up NetworkX translations
