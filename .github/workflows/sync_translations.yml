@@ -4,7 +4,7 @@ on:
   #  - cron: '0 0 * * WED'  # Every Wednesday at midnight
   workflow_dispatch:
 jobs:
-  build:
+  sync_translations:
     runs-on: ubuntu-latest
     steps:
       - name: Sync NetworkX translations
