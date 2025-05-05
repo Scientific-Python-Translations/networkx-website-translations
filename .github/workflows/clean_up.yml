@@ -1,7 +1,7 @@
 name: Clean up
 on:
-  #schedule:
-  #  - 0 0 * * FRI  # Every Friday at midnight
+  schedule:
+    - cron: '0 0 * * FRI'  # Every Friday at midnight
   workflow_dispatch:
 jobs:
   clean:
