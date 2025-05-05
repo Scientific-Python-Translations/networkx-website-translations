@@ -1,7 +1,7 @@
 name: Sync Content
 on:
-  # schedule:
-  #   - cron: '0 5 * * *'  # Daily at 5 am
+  schedule:
+    - cron: '0 5 * * *'  # Daily at 5 am
   workflow_dispatch:
 jobs:
   sync_content:
@@ -17,7 +17,7 @@ jobs:
           translations-path: "build/"
           translations-source-path: "build/en/"
           translations-ref: "main"
-          auto-merge: "false"
+          auto-merge: "true"
           # These are provided by the Scientific Python Project and allow
           # automation with bots
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
