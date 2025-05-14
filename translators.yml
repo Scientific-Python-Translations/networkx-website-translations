@@ -13,7 +13,10 @@ hi:
 - img_link: https://production-enterprise-static.cf-downloads.crowdin.com/avatar/141/large/85fb87a807aa84ed7a2b0b48fc16bc1b.png
   name: agriyakhetarpal
   username: agriyakhetarpal
-ja: []
+ja:
+- img_link: https://production-enterprise-static.cf-downloads.crowdin.com/avatar/127/large/ed14b4e68675fcb1d46d28512da0d894.jpeg
+  name: Kozo Nishida
+  username: kozo2
 ko: []
 pl: []
 pt-BR:
